@@ -12,11 +12,11 @@ package it.unibo.oop.lab.enum1;
  */
 public final class TestSportByEnumeration {
 
-    private TestSportByEnumeration() { }
+    private TestSportByEnumeration() {
+    }
 
     /**
-     * @param args
-     *            ignored
+     * @param args ignored
      */
     public static void main(final String... args) {
         /*
@@ -24,6 +24,6 @@ public final class TestSportByEnumeration {
          * 
          * By now, you know how to do it
          */
-        // TODO
+
     }
 }
