@@ -5,7 +5,6 @@ package it.unibo.oop.lab.enum2;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 import it.unibo.oop.lab.socialnetwork.SocialNetworkUserImpl;
