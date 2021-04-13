@@ -49,7 +49,6 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
     public static final Sport BIKE;
 
     /*
-     * TODO: initialize properly these sports
      */
     static {
         SOCCER = new Sport("soccer");
@@ -120,7 +119,6 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
     }
 
     /*
-     * TODO
      * 
      * Complete the definition of this static inner class defining a Sport along
      * with its bare name.
@@ -135,7 +133,6 @@ public class SportSocialNetworkUserImpl<U extends User> extends SocialNetworkUse
         }
 
         /*
-         * TODO
          * 
          * Redefine equals so that two sports are equal only if they feature the very
          * same name. Remember that you must also redefine hashCode()!
