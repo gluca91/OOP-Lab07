@@ -18,7 +18,6 @@ package it.unibo.oop.lab.enum2;
 public enum Sport {
 
     /*
-     * TODO
      * 
      * Declare the following sports:
      * 
@@ -38,47 +37,70 @@ public enum Sport {
      * 
      */
 
+    BASKET(Place.INDOOR, 10, "basket"), SOCCER(Place.OUTDOOR, 22, "soccer"), TENNIS(Place.OUTDOOR, 2, "tennis"),
+    BIKE(Place.OUTDOOR, 100, "bike"), F1(Place.OUTDOOR, 1, "f1"), MOTOGP(Place.OUTDOOR, 20, "motogp"),
+    VOLLEY(Place.OUTDOOR, 12, "volley");
+
     /*
-     * TODO
      * 
      * [FIELDS]
      * 
      * Declare required fields
      */
+    private final int noTeamMembers;
+    private final String name;
+    private final Place place;
 
     /*
-     * TODO
-     * 
      * [CONSTRUCTOR]
      * 
      * Define a constructor like this:
      * 
      * - Sport(final Place place, final int noTeamMembers, final String actualName)
      */
+    private Sport(final Place place, final int noTeamMembers, final String actualName) {
+        this.name = actualName;
+        this.noTeamMembers = noTeamMembers;
+        this.place = place;
+    }
 
     /*
-     * TODO
-     * 
      * [METHODS] To be defined
      * 
      * 
      * 1) public boolean isIndividualSport()
      * 
      * Must return true only if called on individual sports
-     * 
-     * 
+     */
+    public boolean isIndividialSport() {
+        return this.noTeamMembers == 1;
+    }
+
+    /*
      * 2) public boolean isIndoorSport()
      * 
      * Must return true in case the sport is practices indoor
-     * 
-     * 
+     */
+    public boolean isIndoorSport() {
+        return this.place.equals(Place.INDOOR);
+    }
+
+    /*
      * 3) public Place getPlace()
      * 
      * Must return the place where this sport is practiced
-     * 
-     * 
+     */
+    public Place getPlace() {
+        return this.place;
+    }
+
+    /*
      * 4) public String toString()
      * 
      * Returns the string representation of a sport
      */
+    @Override
+    public String toString() {
+        return "name: " + this.name + " n: " + this.noTeamMembers + " place: " + this.place;
+    }
 }
